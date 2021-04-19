@@ -35,15 +35,13 @@ import (
 	"log"
 	"net/http"
 	"os"
-
-	"github.com/Jsagudelo1704/GoHeroku/services"
 )
 
 const rutabase = "/api"
 
 func main() {
 
-	services.SetupRoutes(rutabase)
+	SetupRoutes(rutabase)
 	err := http.ListenAndServe(GetPort(), nil)
 	if err != nil {
 		log.Fatal(err)

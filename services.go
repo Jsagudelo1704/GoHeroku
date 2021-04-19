@@ -1,4 +1,4 @@
-package service
+package main
 
 import (
 	"fmt"
@@ -10,14 +10,18 @@ const rutaStats = "stats"
 
 //Invocar controlador para servicio Mutant
 func handleMutant(w http.ResponseWriter, r *http.Request) {
-	context.JSON(http.StatusOK, map[string]interface{}{"ruta": "mutatn"})
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("Mutante"))
+	//context.JSON(http.StatusOK, map[string]interface{}{"ruta": "mutatn"})
 	//mutantController(w, r)
 }
 
 //Invocar controlador para servicio Stats
 func handleStats(w http.ResponseWriter, r *http.Request) {
-	context.JSON(http.StatusOK, map[string]interface{}{"ruta": "stats"})
+	//context.JSON(http.StatusOK, map[string]interface{}{"ruta": "stats"})
 	//statsController(w, r)
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("Stats"))
 }
 
 // SetupRoutes :
