@@ -36,7 +36,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/Jsagudelo1704/Go/services"
+	"github.com/Jsagudelo1704/GoHeroku/services"
 )
 
 const rutabase = "/api"

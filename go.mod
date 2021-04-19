@@ -1,4 +1,4 @@
-module github.com/Jsagudelo1704/Go
+module github.com/Jsagudelo1704/GoHeroku
 
 go 1.16
 
